@@ -16,19 +16,44 @@
 .wrap {
   max-width: 64rem;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 100%;
+  line-height: 2.5rem;
 }
 
-header, main {
+/* header, main {
   padding: 0 1rem;
+} */
+
+.green {
+  background: #becb00;
 }
 
-.header {
-  background: #becb00;
+h1, h2 {
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .main-nav {
@@ -37,11 +62,10 @@ header, main {
 }
 
 .menu-button {
-  border: none;
   background: transparent;
+  border: none;
   width: 100%;
   text-align: left;
-  font-size: 1rem;
 }
 
 .menu-button img {
@@ -50,34 +74,28 @@ header, main {
   vertical-align: middle;
 }
 
-
-#main-menu,
-#social-menu {
-  list-style-type: none;
+.menu-button-label {
+  font-size: 1rem;
+  margin-left: 1rem;
 }
 
 #main-menu {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  display: none;
+  list-style-type: none;
+  border-bottom: 1px solid #000;
 }
 
 #main-menu a {
-  font-size: 1.5rem;
-  display: block;
   text-decoration: none;
   color: #000;
+  font-size: 1.5rem;
+  display: block;
+  padding: 1rem;
   border-left: 5px solid transparent;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 1rem;
-  background: #becb00;
 }
 
 #main-menu a:hover,
 #main-menu a:focus {
-  border-left: 5px solid #000;
+  border-color: #000;
 }
 
 .social-nav {
@@ -86,7 +104,38 @@ header, main {
   right: 1rem;
 }
 
+#social-menu {
+  list-style-type: none;
+}
+
 #social-menu img {
   width: 2rem;
-  height: 2rem;
+  height: auto;
+}
+
+.bb-logo {
+  padding: 6rem 3rem;
+}
+
+.bb-logo img {
+  width: 100%;
+  height: auto;
+}
+
+.pp-logo {
+  text-align: center;
+}
+
+.pp-logo img {
+  width: 8rem;
+  height: auto;
+}
+
+/* main */
+.slider {
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+.slider img {
+  width: 100%;
 }
