@@ -16,7 +16,15 @@
 .wrap {
   max-width: 64rem;
   margin: 0 auto;
-  padding: 0 1rem;
+}
+
+.fluid {
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+.green-box {
+  background: #becb00;
 }
 
 body {
@@ -25,15 +33,7 @@ body {
   line-height: 2.5rem;
 }
 
-/* header, main {
-  padding: 0 1rem;
-} */
-
-.green {
-  background: #becb00;
-}
-
-h1, h2 {
+h1, h2, h3, h4 {
   font-weight: normal;
   margin-bottom: 1rem;
 }
@@ -52,6 +52,15 @@ p {
 }
 
 .section {
+  padding: 0 1rem;
+  margin-bottom: 5rem;
+}
+
+.section:first-of-type {
+  margin-top: 5rem;
+}
+
+.section.green-box {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -132,10 +141,46 @@ p {
 }
 
 /* main */
-.slider {
-  margin-left: -1rem;
-  margin-right: -1rem;
-}
 .slider img {
   width: 100%;
+}
+
+.a-link {
+  display: block;
+  background: #becb00;
+  padding: .5rem 1rem;
+  color: #000;
+  font-size: 1.25rem;
+}
+
+.a-link h3 {
+  margin: 0;
+}
+
+.a-content {
+  margin-top: 2rem;
+}
+
+.a-inner {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+}
+
+.a-inner .col-1 {
+  width: 75%;
+}
+
+.a-inner .col-2 {
+  width: 25%;
+}
+
+.a-inner p,
+.a-inner h4 {
+  font-size: 1.25rem;
+  font-weight: normal;
+}
+
+.menu-price p {
+  text-align: right;
 }
