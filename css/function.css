@@ -27,6 +27,11 @@
   background: #becb00;
 }
 
+.dark-box {
+  background: #000;
+  color: #fff;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 100%;
@@ -60,21 +65,25 @@ p {
   margin-top: 5rem;
 }
 
-.section.green-box {
+.section.green-box,
+.section.dark-box {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
+.section img {
+  width: 100%;
+  height: auto;
+}
+
 .main-nav {
-  padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
 .menu-button {
   background: transparent;
   border: none;
-  width: 100%;
-  text-align: left;
+  padding: 1rem;
 }
 
 .menu-button img {
@@ -123,7 +132,9 @@ p {
 }
 
 .bb-logo {
-  padding: 6rem 3rem;
+  padding: 6rem 0;
+  margin: 0 auto;
+  max-width: 18rem;
 }
 
 .bb-logo img {
@@ -141,9 +152,7 @@ p {
 }
 
 /* main */
-.slider img {
-  width: 100%;
-}
+
 
 .a-link {
   display: block;
@@ -183,4 +192,38 @@ p {
 
 .menu-price p {
   text-align: right;
+}
+
+.selected img {
+  display: none;
+}
+
+.employer-items,
+.employer-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.employer-item h3 {
+  order: 2;
+  display: block;
+  padding: 1rem;
+  background: #888;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.employer-item img {
+  order: 1;
+}
+
+@media (min-width: 768px) {
+  .employer-items {
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+  .employer-item {
+    width: 50%;
+    padding: 1rem;
+  }
 }
